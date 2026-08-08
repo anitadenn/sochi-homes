@@ -18,95 +18,95 @@ const img = (id: string, w = 1200) =>
 
 export const properties: Property[] = [
   {
-    id: "aurora-penthouse",
-    name: "Aurora Penthouse",
-    location: "Central Sochi · Sea Front",
-    area: "240 m²",
-    beds: 4,
-    baths: 4,
-    price: 1850000,
-    image: img("photo-1600607687939-ce8a6c25118c"),
-    alt: "Modern penthouse living room with floor-to-ceiling windows overlooking the Black Sea",
-    tags: ["Sea View", "Ready to Move"],
-    description:
-      "A corner penthouse on the 21st floor with sweeping views of the Black Sea, a private terrace and concierge service.",
-    featured: true,
-  },
-  {
-    id: "rosa-khutor-chalet",
-    name: "Rosa Khutor Ski Chalet",
-    location: "Krasnaya Polyana · Rosa Khutor",
-    area: "320 m²",
+    id: "banana-island-villa",
+    name: "Banana Island Waterfront Villa",
+    location: "Banana Island · Lagos",
+    area: "620 m²",
     beds: 5,
-    baths: 5,
-    price: 2400000,
-    image: img("photo-1512917774080-9991f1c4c750"),
-    alt: "Wood-and-stone alpine chalet with warm lighting in a ski resort",
-    tags: ["Ski-in / Ski-out", "Exclusive"],
+    baths: 6,
+    price: 4200000,
+    image: img("photo-1613490493576-7fde63acd811"),
+    alt: "Contemporary villa with a pool on the Banana Island waterfront at dusk",
+    tags: ["Waterfront", "Gated Estate"],
     description:
-      "Ski-in, ski-out chalet with a private spa, heated outdoor terrace and five en-suite bedrooms on the mountain.",
+      "A rare waterfront home on the lagoon with a private jetty, resort-style pool and 24-hour estate security.",
     featured: true,
   },
   {
-    id: "imeretinsky-sea-villa",
-    name: "Imeretinsky Sea Villa",
-    location: "Adler · Imeretinsky Resort",
-    area: "380 m²",
+    id: "ikoyi-sky-penthouse",
+    name: "Ikoyi Sky Penthouse",
+    location: "Ikoyi · Lagos",
+    area: "410 m²",
     beds: 4,
     baths: 5,
-    price: 3100000,
-    image: img("photo-1613490493576-7fde63acd811"),
-    alt: "Contemporary luxury villa with infinity pool at dusk",
-    tags: ["New Build", "Private Pool"],
+    price: 1900000,
+    image: img("photo-1600607687939-ce8a6c25118c"),
+    alt: "Full-floor penthouse living room with floor-to-ceiling windows over the Lagos lagoon",
+    tags: ["Penthouse", "Sea View"],
     description:
-      "New-build villa minutes from the Olympic Park with a saltwater pool, landscaped gardens and beach access.",
+      "A full-floor penthouse in one of Ikoyi's newest towers, with panoramic lagoon views, smart-home automation and concierge.",
+    featured: true,
   },
   {
-    id: "gorky-gorod-residence",
-    name: "Gorky Gorod Residence",
-    location: "Krasnaya Polyana · Gorky Gorod",
-    area: "165 m²",
-    beds: 3,
-    baths: 3,
-    price: 1150000,
-    image: img("photo-1600566753190-17f0baa2a6c3"),
-    alt: "Bright modern apartment interior with mountain views",
-    tags: ["Rental-Ready", "Mountain View"],
-    description:
-      "Turnkey residence in a managed resort complex with a proven short-let track record and strong winter occupancy.",
-  },
-  {
-    id: "riviera-park-apartment",
-    name: "Riviera Park Apartment",
-    location: "Central Sochi · Riviera",
-    area: "110 m²",
-    beds: 2,
-    baths: 2,
-    price: 720000,
-    image: img("photo-1616486338812-3dadae4b4ace"),
-    alt: "Elegant living room with sea tones and designer furniture",
-    tags: ["Sea View", "Investment"],
-    description:
-      "An elegant two-bedroom in a boutique building opposite Riviera Park, with rental yields among the city's best.",
-  },
-  {
-    id: "dagomys-estate",
-    name: "Dagomys Estate",
-    location: "Dagomys · Private Coast",
-    area: "520 m²",
+    id: "lekki-beachfront-estate",
+    name: "Lekki Beachfront Estate",
+    location: "Lekki Phase 1 · Lagos",
+    area: "540 m²",
     beds: 6,
     baths: 7,
-    price: 4600000,
-    image: img("photo-1613977257363-707ba9348227"),
-    alt: "Grand villa interior with double-height ceilings and chandelier",
-    tags: ["Exclusive", "Private Grounds"],
+    price: 2600000,
+    image: img("photo-1512917774080-9991f1c4c750"),
+    alt: "Modern family estate with warm lighting on a tree-lined Lekki road",
+    tags: ["Beachfront", "New Build"],
     description:
-      "A gated estate on the quiet Dagomys coast with six bedrooms, an indoor pool, staff quarters and 1.2 ha of grounds.",
+      "Steps from the Atlantic on a tree-lined Lekki road — light-filled rooms, a private pool and staff quarters.",
+  },
+  {
+    id: "maitama-diplomatic-residence",
+    name: "Maitama Diplomatic Residence",
+    location: "Maitama · Abuja",
+    area: "480 m²",
+    beds: 5,
+    baths: 6,
+    price: 1400000,
+    image: img("photo-1613977257363-707ba9348227"),
+    alt: "Grand villa interior with double-height ceilings in Abuja's diplomatic district",
+    tags: ["Diplomatic Zone", "Ready to Move"],
+    description:
+      "A turnkey residence in Abuja's diplomatic district with generous gardens, servant quarters and gated security.",
+  },
+  {
+    id: "katampe-smart-home",
+    name: "Katampe Hills Smart Home",
+    location: "Katampe District · Abuja",
+    area: "310 m²",
+    beds: 4,
+    baths: 5,
+    price: 1100000,
+    image: img("photo-1600566753190-17f0baa2a6c3"),
+    alt: "Bright modern smart-home interior with mountain district views",
+    tags: ["Smart Home", "Investment"],
+    description:
+      "A modern terraced home in the capital's fastest-growing district, wired for smart living and strong tenant demand.",
+  },
+  {
+    id: "gra-executive-villa",
+    name: "GRA Executive Villa",
+    location: "GRA Phase 3 · Port Harcourt",
+    area: "430 m²",
+    beds: 5,
+    baths: 6,
+    price: 980000,
+    image: img("photo-1616486338812-3dadae4b4ace"),
+    alt: "Elegant executive villa living room with warm neutral tones",
+    tags: ["GRA", "High Yield"],
+    description:
+      "An executive villa in Port Harcourt's premier GRA with a separate guest suite and a proven corporate rental history.",
   },
 ];
 
 export const stats = [
-  { value: "15+", label: "Years in Sochi real estate" },
+  { value: "15+", label: "Years in Nigerian real estate" },
   { value: "$850M+", label: "In sales closed" },
   { value: "1,200+", label: "Clients served worldwide" },
   { value: "98%", label: "Client satisfaction" },
@@ -114,39 +114,39 @@ export const stats = [
 
 export const guarantees = [
   {
-    title: "Licensed & Regulated",
-    text: "A member of the Russian Guild of Realtors with full legal accreditation to sell and manage property in Sochi.",
+    title: "Registered & Regulated",
+    text: "Fully registered with the Corporate Affairs Commission and compliant with LASRERA — licensed to sell and manage property in Nigeria.",
   },
   {
-    title: "Full Due Diligence",
-    text: "Every title deed, ownership chain and building permit verified by our in-house legal team before you commit.",
+    title: "Verified Title & Documents",
+    text: "Every Certificate of Occupancy, title search and governor's consent verified by our legal partners before you commit.",
   },
   {
     title: "Off-Market Access",
-    text: "Priority access to exclusive residences that never appear on portals — reserved for our private clients.",
+    text: "Priority access to exclusive homes that never appear on portals — reserved for our private clients.",
   },
   {
-    title: "English-Speaking Team",
-    text: "International buyers work with a dedicated English-speaking advisor from first call to key handover.",
+    title: "Diaspora & International Expertise",
+    text: "Buying from abroad is seamless: live video viewings, digital paperwork and currency guidance for diaspora clients.",
   },
 ];
 
 export const investmentPoints = [
   {
-    value: "Year-round destination",
-    text: "Sochi pairs Black Sea summers with Krasnaya Polyana's world-class skiing — demand never has a low season.",
+    value: "One of Africa's biggest economies",
+    text: "Nigeria's growth engine is drawing global attention — and its prime property market is maturing with it.",
   },
   {
-    value: "Olympic-grade infrastructure",
-    text: "A new international airport, modern motorways and global hotel brands arrived with the 2014 Games.",
+    value: "Diaspora demand, rising",
+    text: "Nigerians abroad are investing home at record levels — buying quality homes for income, use and legacy.",
   },
   {
-    value: "Rising rental demand",
-    text: "Tourist arrivals grow year on year, driving healthy short-let yields in managed resort complexes.",
+    value: "Strong rental yields",
+    text: "Prime Lagos and Abuja addresses deliver some of the continent's strongest yields, with dollar-denominated leases in demand.",
   },
   {
     value: "Entry from $250k",
-    text: "From one-bedroom apartments to private estates — a market with rare depth for every investor profile.",
+    text: "From smart two-bedrooms to waterfront estates — a market with rare depth for every investor profile.",
   },
 ];
 
@@ -154,41 +154,41 @@ export const processSteps = [
   {
     number: "01",
     title: "Discovery Call",
-    text: "We learn your goals, budget and timeline in a confidential consultation — in person, by phone or video call.",
+    text: "We learn your goals, budget and timeline in a confidential consultation — in person, by phone or video.",
   },
   {
     number: "02",
     title: "Private Viewings",
-    text: "We curate a shortlist of off-market and market residences and arrange private tours — on-site or live video.",
+    text: "We curate a shortlist of off-market and listed homes and arrange private tours — on-site or live video.",
   },
   {
     number: "03",
     title: "Legal & Purchase",
-    text: "Our lawyers handle due diligence, negotiation and closing, with transparent fees and no hidden costs.",
+    text: "Our legal partners handle title verification, negotiation and closing — with transparent fees and no surprises.",
   },
   {
     number: "04",
     title: "Handover & Beyond",
-    text: "Keys, registration and utility setup are managed for you — plus optional rental management and concierge.",
+    text: "Keys, registration and utility setup are managed for you — plus optional property management.",
   },
 ];
 
 export const services = [
   {
     title: "Sales & Acquisitions",
-    text: "Buying or selling luxury property in Sochi — we match the right residence to the right buyer and negotiate on your behalf.",
+    text: "Buying or selling premium property across Lagos, Abuja and Port Harcourt — we match the right home to the right buyer and negotiate for you.",
   },
   {
     title: "Property Management",
-    text: "Short-let and long-let management with full reporting: bookings, cleaning, maintenance and remittance to your account.",
+    text: "Short-let and long-let management with full reporting: bookings, maintenance and monthly remittance to your account.",
   },
   {
     title: "Legal & Due Diligence",
-    text: "Title checks, purchase agreements and closing support from lawyers who specialise in foreign buyer transactions.",
+    text: "Title verification, purchase agreements and closing support from lawyers who specialise in Nigerian property law.",
   },
   {
     title: "Relocation & Concierge",
-    text: "From airport pickup and school placement to interior design and staffing — everything it takes to feel at home.",
+    text: "For returnees and relocating professionals — airport pickup, schools, interiors and staff, all handled.",
   },
 ];
 
@@ -202,23 +202,23 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "They found us an off-market penthouse we could never have seen on our own. The due diligence was meticulous — we closed from London without a single trip.",
+      "They found us an Ikoyi penthouse we could never have found on our own. The due diligence was meticulous — we closed from London without a single trip.",
     name: "James Whitfield",
     role: "Property investor · London",
     initials: "JW",
   },
   {
     quote:
-      "The management team runs our Gorky Gorod residence like a five-star hotel. Reporting is monthly, remittances are on time, and occupancy stayed above 80% last winter.",
-    name: "Elena Petrova",
-    role: "Entrepreneur · Moscow",
-    initials: "EP",
+      "The management team runs our Lekki beach house like a five-star hotel. Reporting is monthly, remittances arrive on time, and occupancy stayed strong all year.",
+    name: "Adaeze Okafor",
+    role: "Entrepreneur · Lagos",
+    initials: "AO",
   },
   {
     quote:
-      "As a foreign buyer I expected bureaucracy. Their legal team handled everything — registration, taxes, the lot — and explained each step in plain English.",
+      "As a foreign buyer I expected bureaucracy. Their legal team handled the C of O, registration and the lot — and explained each step in plain English.",
     name: "Markus Weber",
-    role: "Relocated executive · Munich",
+    role: "Relocated executive · Abuja",
     initials: "MW",
   },
 ];

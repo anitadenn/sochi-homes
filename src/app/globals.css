@@ -1,21 +1,21 @@
 @import "tailwindcss";
 
-/* ---- Design tokens: Sochi Homes "quiet luxury" palette ---- */
+/* ---- Design tokens: Sochi Homes — emerald & green-ink ---- */
 @theme {
-  --color-ivory: #faf9f6;
-  --color-ivory-dark: #f1ede6;
-  --color-night: #0f1b2a;
-  --color-night-soft: #16273b;
-  --color-gold: #c6a664;
-  --color-gold-dark: #a9884a;
-  --color-gold-light: #e3cc9b;
-  --color-slate-muted: #5b6776;
+  --color-ivory: #f7f8f5;
+  --color-ivory-dark: #eef0eb;
+  --color-night: #0f1a17;
+  --color-night-soft: #12251e;
+  --color-emerald: #1f6f5c;
+  --color-emerald-dark: #155244;
+  --color-emerald-light: #a8c9b5;
+  --color-slate-muted: #5e6b63;
 
   --tracking-luxury: 0.22em;
   --tracking-wideplus: 0.08em;
 
-  --shadow-soft: 0 12px 44px -16px rgba(15, 27, 42, 0.22);
-  --shadow-card: 0 24px 60px -24px rgba(15, 27, 42, 0.38);
+  --shadow-soft: 0 12px 44px -16px rgba(8, 18, 15, 0.22);
+  --shadow-card: 0 24px 60px -24px rgba(8, 18, 15, 0.38);
 
   --max-width-8xl: 88rem;
 }
@@ -45,7 +45,7 @@
   }
 
   ::selection {
-    background: color-mix(in srgb, var(--color-gold) 40%, transparent);
+    background: color-mix(in srgb, var(--color-emerald) 35%, transparent);
     color: var(--color-night);
   }
 }
@@ -56,15 +56,15 @@
   }
 
   .eyebrow {
-    @apply text-[11px] font-semibold uppercase tracking-luxury text-gold-dark;
+    @apply text-[11px] font-semibold uppercase tracking-luxury text-emerald-dark;
   }
 
   .eyebrow-light {
-    @apply text-[11px] font-semibold uppercase tracking-luxury text-gold;
+    @apply text-[11px] font-semibold uppercase tracking-luxury text-emerald-light;
   }
 
-  .btn-gold {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold tracking-wide text-night transition duration-300 hover:-translate-y-0.5 hover:bg-gold-light hover:shadow-soft;
+  .btn-emerald {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-emerald px-7 py-3.5 text-sm font-semibold tracking-wide text-white transition duration-300 hover:-translate-y-0.5 hover:bg-emerald-dark hover:shadow-soft;
   }
 
   .btn-outline {
@@ -76,7 +76,7 @@
   }
 
   .input-lux {
-    @apply w-full rounded-lg border border-night/10 bg-white px-4 py-3 text-sm text-night outline-none transition placeholder:text-slate-muted/70 focus:border-gold focus:ring-2 focus:ring-gold/30;
+    @apply w-full rounded-lg border border-night/10 bg-white px-4 py-3 text-sm text-night outline-none transition placeholder:text-slate-muted/70 focus:border-emerald focus:ring-2 focus:ring-emerald/30;
   }
 
   .label-lux {

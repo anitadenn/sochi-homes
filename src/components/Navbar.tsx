@@ -34,9 +34,9 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#top" className="flex items-baseline gap-2">
           <span className="font-serif text-2xl tracking-tight text-night">
-            Sochi<span className="text-gold-dark">Homes</span>
+            Sochi<span className="text-emerald-dark">Homes</span>
           </span>
-          <span className="hidden text-[10px] font-semibold uppercase tracking-luxury text-gold-dark sm:inline">
+          <span className="hidden text-[10px] font-semibold uppercase tracking-luxury text-emerald-dark sm:inline">
             Est. 2010
           </span>
         </a>
@@ -60,10 +60,10 @@ export default function Navbar() {
             href={site.phoneHref}
             className="flex items-center gap-2 text-sm font-semibold text-night/80 transition hover:text-night"
           >
-            <PhoneIcon className="h-4 w-4 text-gold-dark" />
+            <PhoneIcon className="h-4 w-4 text-emerald-dark" />
             {site.phone}
           </a>
-          <a href={site.cta.href} className="btn-gold">
+          <a href={site.cta.href} className="btn-emerald">
             {site.cta.label}
           </a>
         </div>
@@ -90,7 +90,7 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
                 className="border-b border-night/5 py-4 font-serif text-2xl text-night"
               >
-                <span className="mr-3 text-xs tracking-luxury text-gold-dark">
+                <span className="mr-3 text-xs tracking-luxury text-emerald-dark">
                   0{i + 1}
                 </span>
                 {item.label}
@@ -99,7 +99,7 @@ export default function Navbar() {
             <a
               href={site.cta.href}
               onClick={() => setOpen(false)}
-              className="btn-gold mt-8"
+              className="btn-emerald mt-8"
             >
               {site.cta.label}
             </a>
@@ -107,7 +107,7 @@ export default function Navbar() {
               href={site.phoneHref}
               className="mt-4 flex items-center gap-2 text-sm text-night/70"
             >
-              <PhoneIcon className="h-4 w-4 text-gold-dark" />
+              <PhoneIcon className="h-4 w-4 text-emerald-dark" />
               {site.phone}
             </a>
           </nav>
