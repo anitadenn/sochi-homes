@@ -16,7 +16,7 @@ const budgets = [
 
 
 
-const propertyTypes = ["Apartment", "Penthouse", "Villa", "Investment portfolio"];
+const propertyTypes = ["Flat", "Penthouse", "Duplex", "Villa", "Investment portfolio"];
 
 export default function Hero() {
   return (

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "Nigeria real estate",
     "luxury homes Lagos",
     "Lekki real estate",
-    "Ikoyi apartments",
+    "Ikoyi flats",
     "Abuja properties",
     "buy property in Nigeria",
     "Port Harcourt houses",

@@ -8,7 +8,7 @@ export default function Process() {
       <div className="container-lux">
         <SectionHeading
           eyebrow="How It Works"
-          title="A white-glove path to closing"
+          title="A white-glove path to completion"
           subtitle="From first call to key handover, one dedicated advisor and one lawyer guide you through every step -- in your language, on your schedule."
         />
 

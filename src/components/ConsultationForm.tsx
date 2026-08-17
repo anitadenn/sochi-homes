@@ -13,10 +13,10 @@ const budgets = [
 ];
 
 const propertyTypes = [
-  "Apartment",
+  "Flat",
   "Penthouse",
+  "Duplex",
   "Villa",
-  "Ski chalet",
   "Investment portfolio",
 ];
 

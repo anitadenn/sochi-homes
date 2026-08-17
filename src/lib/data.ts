@@ -138,7 +138,7 @@ export const investmentPoints = [
   },
   {
     value: "Diaspora demand, rising",
-    text: "Nigerians abroad are investing home at record levels — buying quality homes for income, use and legacy.",
+    text: "Nigerians abroad are investing back home at record levels — buying quality homes for income, use and legacy.",
   },
   {
     value: "Strong rental yields",
@@ -164,7 +164,7 @@ export const processSteps = [
   {
     number: "03",
     title: "Legal & Purchase",
-    text: "Our legal partners handle title verification, negotiation and closing — with transparent fees and no surprises.",
+    text: "Our legal partners handle title verification, negotiation and completion — with transparent fees and no surprises.",
   },
   {
     number: "04",
@@ -184,7 +184,7 @@ export const services = [
   },
   {
     title: "Legal & Due Diligence",
-    text: "Title verification, purchase agreements and closing support from lawyers who specialise in Nigerian property law.",
+    text: "Title verification, purchase agreements and completion support from lawyers who specialise in Nigerian property law.",
   },
   {
     title: "Relocation & Concierge",
