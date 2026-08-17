@@ -5,10 +5,10 @@ import { site } from "@/lib/site";
 import { CheckIcon, MailIcon, PhoneIcon, WhatsAppIcon } from "./icons";
 
 const budgets = [
-  "$250k – $750k",
-  "$750k – $1.5M",
-  "$1.5M – $3M",
-  "$3M+",
+  "₦10m -- ₦50m",
+  "₦50m -- ₦200m",
+  "₦200m -- ₦400m",
+  "₦400+",
   "Not sure yet",
 ];
 
@@ -133,7 +133,7 @@ export default function ConsultationForm() {
                   name="name"
                   required
                   type="text"
-                  placeholder="Jane Smith"
+                  placeholder="Godwin Simeon"
                   className="input-lux"
                 />
               </div>
@@ -146,7 +146,7 @@ export default function ConsultationForm() {
                   name="email"
                   required
                   type="email"
-                  placeholder="jane@email.com"
+                  placeholder="godwin@email.com"
                   className="input-lux"
                 />
               </div>
@@ -158,7 +158,7 @@ export default function ConsultationForm() {
                   id="phone"
                   name="phone"
                   type="tel"
-                  placeholder="+1 555 000 0000"
+                  placeholder="+234 7055 000 000"
                   className="input-lux"
                 />
               </div>
@@ -171,13 +171,13 @@ export default function ConsultationForm() {
                   name="country"
                   required
                   type="text"
-                  placeholder="United Kingdom"
+                  placeholder="Nigeria"
                   className="input-lux"
                 />
               </div>
               <div>
                 <label htmlFor="budget" className="label-lux">
-                  Budget (USD)
+                  Budget (NGN)
                 </label>
                 <select id="budget" name="budget" className="input-lux">
                   {budgets.map((b) => (

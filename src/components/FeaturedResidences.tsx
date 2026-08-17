@@ -5,7 +5,7 @@ import SectionHeading from "./SectionHeading";
 
 export default function FeaturedResidences() {
   return (
-    <section id="residences" className="scroll-mt-20 bg-ivory py-20 lg:py-28">
+    <section id="residences" className="scroll-mt-20 bg-cream py-20 lg:py-28">
       <div className="container-lux">
         <SectionHeading
           eyebrow="Featured Residences"

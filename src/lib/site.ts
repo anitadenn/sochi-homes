@@ -19,15 +19,13 @@ export const site = {
   hours: "Mon–Sat · 09:00–19:00 WAT",
   nav: [
     { label: "Residences", href: "#residences" },
-    { label: "Why Nigeria", href: "#why-nigeria" },
-    { label: "Process", href: "#process" },
     { label: "Services", href: "#services" },
     { label: "Reviews", href: "#testimonials" },
     { label: "Contact", href: "#contact" },
   ],
   cta: {
-    label: "Book a Consultation",
-    href: "#contact",
+    label: "Whatsapp",
+    href: "https://wa.me/2348035550000",
   },
 } as const;
 

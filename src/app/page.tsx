@@ -17,8 +17,6 @@ export default function Home() {
         <Hero />
         <TrustBar />
         <FeaturedResidences />
-        <InvestmentCase />
-        <Process />
         <Services />
         <Testimonials />
         <ConsultationForm />

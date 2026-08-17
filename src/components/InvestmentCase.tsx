@@ -12,10 +12,10 @@ export default function InvestmentCase() {
   return (
     <section
       id="why-nigeria"
-      className="relative scroll-mt-20 overflow-hidden bg-night py-20 text-white lg:py-28"
+      className="relative scroll-mt-20 overflow-hidden bg-green-deep py-20 text-cream lg:py-28"
     >
-      <div className="pointer-events-none absolute -right-40 -top-40 h-[34rem] w-[34rem] rounded-full bg-emerald/10 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-40 -left-40 h-[30rem] w-[30rem] rounded-full bg-night-soft blur-3xl" />
+      <div className="pointer-events-none absolute -right-40 -top-40 h-[34rem] w-[34rem] rounded-full bg-gold/10 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-40 -left-40 h-[30rem] w-[30rem] rounded-full bg-green/10 blur-3xl" />
 
       <div className="container-lux relative grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
         {/* Copy + points */}
@@ -25,16 +25,16 @@ export default function InvestmentCase() {
             dark
             eyebrow="Why Invest in Nigeria"
             title="A market with rare depth"
-            subtitle="Nigeria&apos;s prime property market is maturing fast — driven by diaspora demand, a young urbanising population and some of the continent&apos;s strongest yields."
+            subtitle="Nigeria&apos;s prime property market is maturing fast -- driven by diaspora demand, a young urbanising population and some of the continent&apos;s strongest yields."
           />
 
           <div className="mt-10 grid gap-x-8 gap-y-7 sm:grid-cols-2">
             {investmentPoints.map((point, i) => (
               <Reveal key={point.value} delay={i * 80}>
-                <p className="font-serif text-lg leading-snug text-emerald-light">
+                <p className="font-display text-lg leading-snug text-gold-bright">
                   {point.value}
                 </p>
-                <p className="mt-1.5 text-sm leading-relaxed text-white/55">
+                <p className="mt-1.5 text-sm leading-relaxed text-cream/65">
                   {point.text}
                 </p>
               </Reveal>
@@ -56,7 +56,7 @@ export default function InvestmentCase() {
           </Reveal>
           <Reveal
             delay={150}
-            className="absolute -bottom-10 -left-6 hidden w-56 overflow-hidden rounded-xl border-4 border-night shadow-card sm:block lg:-left-10 lg:w-64"
+            className="absolute -bottom-10 -left-6 hidden w-56 overflow-hidden rounded-xl border-4 border-green-deep shadow-card sm:block lg:-left-10 lg:w-64"
           >
             <Image
               src={skyline}

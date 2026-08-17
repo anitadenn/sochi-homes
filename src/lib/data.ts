@@ -24,7 +24,7 @@ export const properties: Property[] = [
     area: "620 m²",
     beds: 5,
     baths: 6,
-    price: 4200000,
+    price: 420000000,
     image: img("photo-1613490493576-7fde63acd811"),
     alt: "Contemporary villa with a pool on the Banana Island waterfront at dusk",
     tags: ["Waterfront", "Gated Estate"],
@@ -39,7 +39,7 @@ export const properties: Property[] = [
     area: "410 m²",
     beds: 4,
     baths: 5,
-    price: 1900000,
+    price: 719000000,
     image: img("photo-1600607687939-ce8a6c25118c"),
     alt: "Full-floor penthouse living room with floor-to-ceiling windows over the Lagos lagoon",
     tags: ["Penthouse", "Sea View"],
@@ -54,7 +54,7 @@ export const properties: Property[] = [
     area: "540 m²",
     beds: 6,
     baths: 7,
-    price: 2600000,
+    price: 260000000,
     image: img("photo-1512917774080-9991f1c4c750"),
     alt: "Modern family estate with warm lighting on a tree-lined Lekki road",
     tags: ["Beachfront", "New Build"],
@@ -68,7 +68,7 @@ export const properties: Property[] = [
     area: "480 m²",
     beds: 5,
     baths: 6,
-    price: 1400000,
+    price: 400000000,
     image: img("photo-1613977257363-707ba9348227"),
     alt: "Grand villa interior with double-height ceilings in Abuja's diplomatic district",
     tags: ["Diplomatic Zone", "Ready to Move"],
@@ -82,7 +82,7 @@ export const properties: Property[] = [
     area: "310 m²",
     beds: 4,
     baths: 5,
-    price: 1100000,
+    price: 110000000,
     image: img("photo-1600566753190-17f0baa2a6c3"),
     alt: "Bright modern smart-home interior with mountain district views",
     tags: ["Smart Home", "Investment"],
@@ -96,7 +96,7 @@ export const properties: Property[] = [
     area: "430 m²",
     beds: 5,
     baths: 6,
-    price: 980000,
+    price: 98000000,
     image: img("photo-1616486338812-3dadae4b4ace"),
     alt: "Elegant executive villa living room with warm neutral tones",
     tags: ["GRA", "High Yield"],
@@ -107,7 +107,7 @@ export const properties: Property[] = [
 
 export const stats = [
   { value: "15+", label: "Years in Nigerian real estate" },
-  { value: "$850M+", label: "In sales closed" },
+  { value: "₦20B+", label: "In sales closed" },
   { value: "1,200+", label: "Clients served worldwide" },
   { value: "98%", label: "Client satisfaction" },
 ] as const;
@@ -224,8 +224,8 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const formatPrice = (price: number) =>
-  new Intl.NumberFormat("en-US", {
+  new Intl.NumberFormat("en-NG", {
     style: "currency",
-    currency: "USD",
+    currency: "NGN",
     maximumFractionDigits: 0,
   }).format(price);

@@ -1,21 +1,54 @@
 @import "tailwindcss";
 
-/* ---- Design tokens: Sochi Homes — emerald & green-ink ---- */
+/* ============================================================
+   Sochi Homes — "Naija Luxe" design system
+   Inspired by the Nigerian flag (Green · White) + Gold,
+   Ankara textile patterns, and bold high-contrast UI
+   ============================================================ */
 @theme {
-  --color-ivory: #f7f8f5;
-  --color-ivory-dark: #eef0eb;
-  --color-night: #0f1a17;
-  --color-night-soft: #12251e;
-  --color-emerald: #1f6f5c;
-  --color-emerald-dark: #155244;
-  --color-emerald-light: #a8c9b5;
-  --color-slate-muted: #5e6b63;
+  /* ---- Core Brand Palette ---- */
+  --color-green: #0a5c36;          /* Nigeria green — primary dark */
+  --color-green-deep: #063d24;     /* darker green for depth */
+  --color-green-rich: #0f7a47;     /* vibrant green accent */
+  --color-green-soft: #1a9a5b;     /* bright green */
+  --color-gold: #e0a526;           /* Nigerian gold */
+  --color-gold-bright: #f2c14e;    /* bright gold highlight */
+  --color-gold-deep: #b07d12;      /* deep gold for text on light */
 
-  --tracking-luxury: 0.22em;
+  /* ---- Neutrals ---- */
+  --color-cream: #faf7f0;          /* warm off-white — page bg */
+  --color-cream-deep: #f3eee2;     /* alt surface */
+  --color-ivory: #fffdf8;          /* card surface */
+  --color-ink: #16211b;            /* near-black text on light */
+  --color-ink-soft: #3a463e;       /* secondary text */
+  --color-muted: #69766c;           /* muted text */
+  --color-line: rgba(22, 33, 27, 0.10);
+
+  /* ---- Semantic ---- */
+  --color-night: var(--color-green-deep);
+  --color-night-soft: #0b4a2c;
+  --color-emerald: var(--color-green-rich);
+  --color-emerald-dark: var(--color-green);
+  --color-emerald-light: var(--color-gold-bright);
+  --color-slate-muted: var(--color-muted);
+  --color-ivory: var(--color-ivory);
+  --color-sand: var(--color-cream);
+  --color-bone: var(--color-cream-deep);
+  --color-teal: var(--color-green-deep);
+  --color-teal-soft: var(--color-green-rich);
+  --color-teal-mist: var(--color-green-soft);
+  --color-clay: var(--color-gold);
+  --color-clay-dark: var(--color-gold-deep);
+  --color-clay-light: var(--color-gold-bright);
+  --color-amber: var(--color-gold-bright);
+
+  /* ---- Typography ---- */
+  --tracking-luxury: 0.20em;
   --tracking-wideplus: 0.08em;
 
-  --shadow-soft: 0 12px 44px -16px rgba(8, 18, 15, 0.22);
-  --shadow-card: 0 24px 60px -24px rgba(8, 18, 15, 0.38);
+  /* ---- Shadows ---- */
+  --shadow-soft: 0 12px 36px -16px rgba(6, 61, 36, 0.28);
+  --shadow-card: 0 32px 70px -32px rgba(6, 61, 36, 0.40);
 
   --max-width-8xl: 88rem;
 }
@@ -23,7 +56,7 @@
 /* next/font sets these vars on <html> — inline so utilities resolve at runtime */
 @theme inline {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
 }
 
 @layer base {
@@ -32,8 +65,8 @@
   }
 
   body {
-    background: var(--color-ivory);
-    color: var(--color-night);
+    background: var(--color-cream);
+    color: var(--color-ink);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
@@ -41,12 +74,14 @@
   h1,
   h2,
   h3 {
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.015em;
   }
 
   ::selection {
-    background: color-mix(in srgb, var(--color-emerald) 35%, transparent);
-    color: var(--color-night);
+    background: color-mix(in srgb, var(--color-gold) 35%, transparent);
+    color: var(--color-ink);
   }
 }
 
@@ -56,35 +91,76 @@
   }
 
   .eyebrow {
-    @apply text-[11px] font-semibold uppercase tracking-luxury text-emerald-dark;
+    @apply text-[11px] font-bold uppercase tracking-luxury text-green-rich;
   }
 
   .eyebrow-light {
-    @apply text-[11px] font-semibold uppercase tracking-luxury text-emerald-light;
+    @apply text-[11px] font-bold uppercase tracking-luxury text-gold-bright;
   }
 
-  .btn-emerald {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-emerald px-7 py-3.5 text-sm font-semibold tracking-wide text-white transition duration-300 hover:-translate-y-0.5 hover:bg-emerald-dark hover:shadow-soft;
+  /* Gold primary CTA */
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-bold tracking-wide text-green-deep transition duration-300 hover:-translate-y-0.5 hover:bg-gold-bright hover:shadow-soft;
   }
 
-  .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/40 px-7 py-3.5 text-sm font-semibold tracking-wide text-white transition duration-300 hover:border-white hover:bg-white/10;
+  /* Green secondary CTA */
+  .btn-green {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-green px-7 py-3.5 text-sm font-semibold tracking-wide text-cream transition duration-300 hover:-translate-y-0.5 hover:bg-green-deep hover:shadow-soft;
   }
 
+  /* Outline on light */
   .btn-outline-dark {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-night/20 px-7 py-3.5 text-sm font-semibold tracking-wide text-night transition duration-300 hover:border-night/50 hover:bg-night hover:text-white;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-green/30 px-7 py-3.5 text-sm font-semibold tracking-wide text-green transition duration-300 hover:border-green hover:bg-green hover:text-cream;
+  }
+
+  /* Outline on dark */
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-gold/50 px-7 py-3.5 text-sm font-semibold tracking-wide text-gold-bright transition duration-300 hover:border-gold hover:bg-gold hover:text-green-deep;
+  }
+
+  /* Emerald (was emerald) — keep for compatibility */
+  .btn-emerald {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-bold tracking-wide text-green-deep transition duration-300 hover:bg-gold-bright hover:shadow-soft;
+  }
+
+  .btn-clay {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-bold tracking-wide text-green-deep transition duration-300 hover:-translate-y-0.5 hover:bg-gold-bright hover:shadow-soft;
   }
 
   .input-lux {
-    @apply w-full rounded-lg border border-night/10 bg-white px-4 py-3 text-sm text-night outline-none transition placeholder:text-slate-muted/70 focus:border-emerald focus:ring-2 focus:ring-emerald/30;
+    @apply w-full rounded-lg border border-green/15 bg-cream/70 px-4 py-3 text-sm text-ink outline-none transition placeholder:text-muted/70 focus:border-gold focus:ring-2 focus:ring-gold/25;
   }
 
   .label-lux {
-    @apply mb-1.5 block text-xs font-semibold uppercase tracking-wideplus text-slate-muted;
+    @apply mb-1.5 block text-xs font-bold uppercase tracking-wideplus text-muted;
   }
 }
 
-/* ---- Scroll reveal (respects reduced motion) ---- */
+/* ============================================================
+   Ankara / Adire-inspired textile patterns
+   Applied as low-opacity decorative overlays
+   ============================================================ */
+/* Diamond / adire stitch pattern */
+.pattern-diamond {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'%3E%3Cpath d='M24 5 41 24 24 43 7 24Z' stroke='currentColor' stroke-width='1.4'/%3E%3Ccircle cx='24' cy='24' r='2' fill='currentColor'/%3E%3Cpath d='M0 0h48M0 48h48' stroke='currentColor' stroke-width='.6' stroke-opacity='.35'/%3E%3C/svg%3E");
+  background-size: 48px 48px;
+}
+
+/* Ankara dots */
+.pattern-dots {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='34' viewBox='0 0 34 34' fill='none'%3E%3Ccircle cx='8' cy='8' r='2.2' fill='currentColor'/%3E%3Ccircle cx='26' cy='26' r='2.2' fill='currentColor'/%3E%3Cpath d='M17 0v34M0 17h34' stroke='currentColor' stroke-width='.6' stroke-opacity='.4'/%3E%3C/svg%3E");
+  background-size: 34px 34px;
+}
+
+/* Chevron */
+.pattern-chevron {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='24' viewBox='0 0 40 24' fill='none'%3E%3Cpath d='M6 6 20 18 34 6' stroke='currentColor' stroke-width='1.4'/%3E%3Cpath d='M20 6 6 18M20 18 34 6' stroke='currentColor' stroke-width='.7' stroke-opacity='.4'/%3E%3C/svg%3E");
+  background-size: 40px 24px;
+}
+
+/* ============================================================
+   Scroll reveal (respects reduced motion)
+   ============================================================ */
 .reveal {
   opacity: 0;
   transform: translateY(26px);
@@ -96,11 +172,37 @@
   transform: translateY(0);
 }
 
+/* ============================================================
+   Location marquee
+   ============================================================ */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+  .marquee-track {
+    animation: none;
+    flex-wrap: wrap;
   }
   html {
     scroll-behavior: auto;

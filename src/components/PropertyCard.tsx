@@ -15,10 +15,10 @@ export default function PropertyCard({ property }: { property: Property }) {
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           className="object-cover transition duration-700 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-linear-to-t from-night/45 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-green-deep/45 to-transparent" />
 
         {/* Price */}
-        <p className="absolute bottom-4 left-4 rounded-full bg-ivory/95 px-4 py-1.5 text-sm font-bold text-night shadow-soft">
+        <p className="absolute bottom-4 left-4 rounded-full bg-ivory/95 px-4 py-1.5 text-sm font-bold text-green-deep shadow-soft">
           {formatPrice(property.price)}
         </p>
 
@@ -28,7 +28,7 @@ export default function PropertyCard({ property }: { property: Property }) {
             {property.tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full bg-night/60 px-3 py-1 text-[10px] font-semibold uppercase tracking-wideplus text-white backdrop-blur-sm"
+                className="rounded-full bg-green-deep/70 px-3 py-1 text-[10px] font-bold uppercase tracking-wideplus text-cream backdrop-blur-sm"
               >
                 {tag}
               </span>
@@ -39,37 +39,37 @@ export default function PropertyCard({ property }: { property: Property }) {
 
       {/* Body */}
       <div className="flex flex-1 flex-col p-6">
-        <h3 className="font-serif text-xl text-night">{property.name}</h3>
-        <p className="mt-1 flex items-center gap-1.5 text-xs font-medium uppercase tracking-wideplus text-emerald-dark">
+        <h3 className="font-display text-xl text-ink">{property.name}</h3>
+        <p className="mt-1 flex items-center gap-1.5 text-xs font-medium uppercase tracking-wideplus text-green-rich">
           <PinIcon className="h-3.5 w-3.5" />
           {property.location}
         </p>
-        <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-muted">
+        <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
           {property.description}
         </p>
 
-        <div className="mt-5 flex items-center gap-5 border-t border-night/5 pt-4 text-[13px] font-medium text-night/70">
+        <div className="mt-5 flex items-center gap-5 border-t border-line pt-4 text-[13px] font-medium text-ink/70">
           <span className="flex items-center gap-1.5">
-            <BedIcon className="h-4 w-4 text-emerald-dark" />
+            <BedIcon className="h-4 w-4 text-green-rich" />
             {property.beds} bd
           </span>
           <span className="flex items-center gap-1.5">
-            <BathIcon className="h-4 w-4 text-emerald-dark" />
+            <BathIcon className="h-4 w-4 text-green-rich" />
             {property.baths} ba
           </span>
           <span className="flex items-center gap-1.5">
-            <AreaIcon className="h-4 w-4 text-emerald-dark" />
+            <AreaIcon className="h-4 w-4 text-green-rich" />
             {property.area}
           </span>
         </div>
 
         <a
           href="#contact"
-          className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-night transition hover:text-emerald-dark"
+          className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-ink transition hover:text-green-rich"
         >
           Request details
-          <span aria-hidden className="text-emerald-dark">
-            →
+          <span aria-hidden className="text-green-rich">
+            {"→"}
           </span>
         </a>
       </div>
